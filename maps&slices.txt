@@ -1,0 +1,55 @@
+
+package main
+
+import (  
+    "fmt"
+)
+
+func main() {  
+    employeeSalary := map[string]int{
+        "naveen": 12000,
+        "navy": 15000,
+        "john": 9000,
+    }
+    employee := "naveen"
+    salary := employeeSalary[employee]
+    fmt.Println("Salary of", employee, "is", salary)
+}
+
+OUTPUT:-
+
+Salary of naveen is 12000
+
+2)
+
+// Golang program to illustrate 
+// the working of the slice components 
+package main 
+
+import "fmt"
+
+func main() { 
+
+	arr := [7]string{"I", "am", "from", "the", 
+						"state", "Andhra", "pradesh"} 
+ 
+	fmt.Println("Array:", arr) 
+
+
+	myslice := arr[1:6] 
+
+
+	fmt.Println("Slice:", myslice) 
+
+
+	fmt.Printf("Length of the slice: %d", len(myslice)) 
+
+	fmt.Printf("\nCapacity of the slice: %d", cap(myslice)) 
+} 
+
+OUTPUT:-
+
+Array: [I am from the state Andhra pradesh]
+Slice: [am from the state Andhra]
+Length of the slice: 5
+Capacity of the slice: 6
