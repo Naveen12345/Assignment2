@@ -22,8 +22,7 @@ Salary of naveen is 12000
 
 2)
 
-// Golang program to illustrate 
-// the working of the slice components 
+ 
 package main 
 
 import "fmt"
